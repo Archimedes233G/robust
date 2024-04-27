@@ -16,8 +16,6 @@ jobs:
         with:
           node-version: '16'  # Specify the Node.js version you are using
 
-      - name: Change to project directory
-        run: cd ./././
 
       - name: Install dependencies
         run: npm install
@@ -26,8 +24,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Change to project directory
+      run: cd ./././
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/dist  # Adjust this depending on your output directory
+          publish_dir: docs/.vitepress/dist # Adjust this depending on your output directory
