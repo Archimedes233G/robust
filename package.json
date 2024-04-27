@@ -1,16 +1,24 @@
 {
   "name": "robust",
   "version": "1.0.0",
-  "description": "",
+  "description": "A description of your project goes here",
   "main": "index.js",
   "directories": {
-    "doc": "docs"
+    "doc": "docs",
+    "lib": "framework"
   },
   "scripts": {
     "build": "npm run docs:build",
-    "docs:build": "npm run docs:build"
+    "docs:build": "vitepress build docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "documentation",
+    "framework",
+    "your-keyword-here"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^0.20.1"
+  }
 }
