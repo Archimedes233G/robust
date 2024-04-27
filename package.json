@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "npm run docs:build",
-    "npm run docs:build": "vitepress build docs"
+    "docs:build": "vitepress build docs"  // Correctly define the script here
   },
   "keywords": [],
   "author": "",
